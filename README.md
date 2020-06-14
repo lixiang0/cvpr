@@ -1,14 +1,11 @@
 # CVPR2020论文集
 
-- 提供python脚本用于下载全部论文
-- 下载使用代理下载
-- 对部分论文进行了分类整理
-
 ## 百度网盘
 
-todo
+链接：https://pan.baidu.com/s/1qTlLLOuXSFIMWzFw1g9HEQ 
+提取码：tp1m
 
-## 下载论文代码
+## 下载论文集代码
 
 ```
 python cvpr.py
@@ -58,6 +55,17 @@ python cvpr.py
 
 [Physically Realizable Adversarial Examples for LiDAR Object Detection]()
 
+[Learning Deep Network for Detecting 3D Object Keypoints and 6D Poses]()
+
+[DOPS: Learning to Detect 3D Objects and Predict Their 3D Shapes]()
+
+[Train in Germany, Test in the USA: Making 3D Object Detectors Generalize]()
+
+[3DSSD: Point-Based 3D Single Stage Object Detector]()
+
+[FroDO: From Detections to 3D Objects]()
+
+[FocalMix: Semi-Supervised Learning for 3D Medical Image Detection]()
 
 ## 2D目标检测
 
@@ -154,6 +162,19 @@ python cvpr.py
 
 [Label Decoupling Framework for Salient Object Detection]()
 
+[Learning Selective Self-Mutual Attention for RGB-D Saliency Detection]()
+
+[UC-Net: Uncertainty Inspired RGB-D Saliency Detection via Conditional Variational Autoencoders]()
+
+[Adaptive Graph Convolutional Network With Attention Graph Clustering for Co-Saliency Detection]()
+
+[Interactive Two-Stream Decoder for Accurate and Fast Saliency Detection]()
+
+[Multi-Scale Interactive Network for Salient Object Detection]()
+
+[Taking a Deeper Look at Co-Salient Object Detection]()
+
+[Select, Supplement and Focus for RGB-D Saliency Detection]()
 
 
 ## 伪装目标检测
@@ -165,3 +186,53 @@ python cvpr.py
 [Incremental Few-Shot Object Detection]()
 
 [NETNet: Neighbor Erasing and Transferring Network for Better Single Shot Object Detection]()
+
+
+## 人物（交互）检测
+
+[Learning Human-Object Interaction Detection Using Interaction Points]()
+
+[PPDM: Parallel Point Detection and Matching for Real-Time Human-Object Interaction Detection]()
+
+[Learning to Detect Important People in Unlabelled Images for Semi-Supervised Important People Detection]()
+
+[VSGNet: Spatial Attention Network for Detecting Human Object Interactions Using Graph Convolutions]()
+
+
+## 动作检测
+
+[Combining Detection and Tracking for Human Pose Estimation in Videos]()
+
+[G-TAD: Sub-Graph Localization for Temporal Action Detection]()
+
+[Learning to Discriminate Information for Online Action Detection]()
+
+[ZSTAD: Zero-Shot Temporal Activity Detection]()
+
+
+## 人脸检测
+
+[Cross-Domain Face Presentation Attack Detection via Multi-Domain Disentangled Representation Learning]()
+
+[HAMBox: Delving Into Mining High-Quality Anchors on Face Detection]()
+
+[BFBox: Searching Face-Appropriate Backbone and Feature Pyramid Network for Face Detector]()
+
+[Global Texture Enhancement for Fake Face Detection in the Wild]()
+
+[（数据集）DeeperForensics-1.0: A Large-Scale Dataset for Real-World Face Forgery Detection]()
+
+[Face X-Ray for More General Face Forgery Detection]()
+
+[On the Detection of Digital Face Manipulation]()
+
+[Attention-Driven Cropping for Very High Resolution Facial Landmark Detection]()
+
+## 小样本/零样本
+
+
+[Few-Shot Object Detection With Attention-RPN and Multi-Relation Detector]()
+
+[Incremental Few-Shot Object Detection]()
+
+[Don't Even Look Once: Synthesizing Features for Zero-Shot Detection]()

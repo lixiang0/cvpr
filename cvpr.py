@@ -20,6 +20,7 @@ pdfs = re.findall(r'<a href="content_CVPR_2020/papers/.*">', html)
 tasks=set()
 
 def process(i,pdf,length):
+    global tasks
     pry = ips[np.random.randint(0, len(ips))]
     ip=pry[0]
     port=pry[1]
@@ -29,8 +30,9 @@ def process(i,pdf,length):
     pdf = 'http://openaccess.thecvf.com/'+pdf
     # print(pdf,ip)
     try:
+        # print(i,'/',length,':',pdf_name,'  downloading....')
         response = requests.get(pdf, headers=header,
-                            proxies=proxy, stream=True, timeout=10)
+                            proxies=proxy, stream=True, timeout=30)
         if response.status_code == 200:
             with open(pdf_path, 'wb') as f:
                 f.write(response.content)
@@ -38,7 +40,8 @@ def process(i,pdf,length):
             tasks.remove(i)
             print(f'remain {len(tasks)} downloading task... ')
     except Exception as e:
-        # print(e)
+        # print(i,'/',length,':',pdf_name,' error..')
+        tasks.remove(i)
         return  
 
 if __name__ == '__main__':
@@ -51,7 +54,7 @@ if __name__ == '__main__':
             print(i,'/',length,':',pdf_name,'  exist..')
             continue
         tasks.add(i)
-        print(i,'/',length,':',pdf_name,'  downloading....')
+        print(i,'/',length,':',pdf_name,' new download task...')
         Process(target=process, args=(i,pdf_url,length,)).start()
-        time.sleep(5)
+        time.sleep(1)
         
